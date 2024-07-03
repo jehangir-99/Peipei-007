@@ -1,0 +1,32 @@
+var _rect, _path;
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import * as React from "react";
+function SvgMoonpay(_ref, svgRef) {
+  let {
+    title,
+    titleId,
+    ...props
+  } = _ref;
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 36,
+    height: 36,
+    viewBox: "0 0 36 36",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _rect || (_rect = /*#__PURE__*/React.createElement("rect", {
+    width: 36,
+    height: 36,
+    rx: 18,
+    fill: "#7D00FF"
+  })), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M24.933 14.14a3.07 3.07 0 0 0 0-6.14 3.07 3.07 0 0 0 0 6.14ZM15.5 28A7.495 7.495 0 0 1 8 20.493a7.495 7.495 0 0 1 7.5-7.506c4.149 0 7.5 3.354 7.5 7.506A7.495 7.495 0 0 1 15.5 28Z",
+    fill: "#fff"
+  })));
+}
+const ForwardRef = /*#__PURE__*/React.forwardRef(SvgMoonpay);
+export default __webpack_public_path__ + "static/media/moonpay.bcc919b9af05187393277c9b2f420cfa.svg";
+export { ForwardRef as ReactComponent };

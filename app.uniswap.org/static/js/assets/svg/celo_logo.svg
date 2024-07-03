@@ -1,0 +1,38 @@
+var _style, _circle, _path;
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import * as React from "react";
+function SvgCeloLogo(_ref, svgRef) {
+  let {
+    title,
+    titleId,
+    ...props
+  } = _ref;
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    id: "Layer_1",
+    xmlns: "http://www.w3.org/2000/svg",
+    xmlnsXlink: "http://www.w3.org/1999/xlink",
+    x: "0px",
+    y: "0px",
+    viewBox: "0 0 250 250",
+    style: {
+      enableBackground: "new 0 0 250 250"
+    },
+    xmlSpace: "preserve",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _style || (_style = /*#__PURE__*/React.createElement("style", {
+    type: "text/css"
+  }, "\n\t.st0{fill:#FCFF52;}\n")), _circle || (_circle = /*#__PURE__*/React.createElement("circle", {
+    className: "st0",
+    cx: 125,
+    cy: 125,
+    r: 125
+  })), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M188.9,60.7H60.7v128.2h128.2v-44.8h-21.3c-7.3,16.3-23.8,27.7-42.7,27.7c-26,0-47.1-21.3-47.1-47.1c0-25.9,21.1-47,47.1-47 c19.3,0,35.8,11.7,43.1,28.4h20.9V60.7z"
+  })));
+}
+const ForwardRef = /*#__PURE__*/React.forwardRef(SvgCeloLogo);
+export default __webpack_public_path__ + "static/media/celo_logo.e95fad7be41e27771a1729f111f11ec9.svg";
+export { ForwardRef as ReactComponent };

@@ -1,0 +1,30 @@
+var _path;
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import * as React from "react";
+function SvgBlueLoader(_ref, svgRef) {
+  let {
+    title,
+    titleId,
+    ...props
+  } = _ref;
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 94,
+    height: 94,
+    viewBox: "0 0 94 94",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M92 47C92 22.1472 71.8528 2 47 2C22.1472 2 2 22.1472 2 47C2 71.8528 22.1472 92 47 92",
+    stroke: "#2172E5",
+    strokeWidth: 3,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  })));
+}
+const ForwardRef = /*#__PURE__*/React.forwardRef(SvgBlueLoader);
+export default __webpack_public_path__ + "static/media/blue-loader.249140daf016adc355cfb029ec67de19.svg";
+export { ForwardRef as ReactComponent };
